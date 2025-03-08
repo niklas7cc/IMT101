@@ -1,0 +1,52 @@
+% Einstellungen für das Mathematik-Dokument
+\usepackage[utf8]{inputenc}  % UTF-8 Kodierung
+\usepackage[T1]{fontenc}     % Korrekte Zeichenkodierung
+\usepackage{lmodern}         % Moderne Schriftart
+\usepackage{amsmath, amssymb, amsthm}  % Mathematische Pakete
+\usepackage{mathtools}       % Erweiterte Mathe-Funktionen
+\usepackage{geometry}        % Seitenränder anpassen
+\usepackage{graphicx}        % Bilder einfügen
+
+% Seitenlayout
+\geometry{left=2cm, right=2cm, top=2.5cm, bottom=2.5cm}
+
+% Theorem-Umgebungen
+\newtheorem{theorem}{Satz}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+
+
+
+
+% Benötigtes Paket für farbige Boxen
+\usepackage[most]{tcolorbox}
+
+% Farben definieren (Pastelltöne)
+\definecolor{pastellblue}{RGB}{173, 216, 230}   % Hellblau
+\definecolor{pastellgreen}{RGB}{144, 238, 144}  % Hellgrün
+\definecolor{pastellpink}{RGB}{255, 182, 193}   % Rosa
+\definecolor{pastellyellow}{RGB}{255, 250, 205} % Hellgelb
+
+% Definition-Box
+\newtcolorbox{definitionbox}{
+    colback=pastellblue!30, colframe=pastellblue!80!black, 
+    title=Definition, fonttitle=\bfseries
+}
+
+% Satz-Box
+\newtcolorbox{satzbox}{
+    colback=pastellgreen!30, colframe=pastellgreen!80!black, 
+    title=Satz, fonttitle=\bfseries
+}
+
+% Beweis-Box
+\newtcolorbox{beweisbox}{
+    colback=pastellpink!30, colframe=pastellpink!80!black, 
+    title=Beweis, fonttitle=\bfseries
+}
+
+% Beispiel-Box
+\newtcolorbox{beispielbox}{
+    colback=pastellyellow!30, colframe=pastellyellow!80!black, 
+    title=Beispiel, fonttitle=\bfseries
+}
